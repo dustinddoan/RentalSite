@@ -6,6 +6,7 @@ class CreateHouses < ActiveRecord::Migration
       t.float :price
       t.float :latitude
       t.float :longitude
+      t.text :details
       t.belongs_to :user, index: true, foreign_key: true
 
       t.timestamps null: false
