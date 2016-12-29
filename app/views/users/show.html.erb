@@ -1,0 +1,28 @@
+<div class="container-fluid">
+
+<%= render "/layouts/navbar" %>
+<h1>Hello <%=current_user.name.upcase %></h1>
+<!-- object current_user defined in ApplicationController -->
+<h3><%="You curently have #{current_user.houses.length} listings"%></h3>
+<table class="table table-hover">
+  <tr>
+    <th>Address</th>
+    <th>Price</th>
+    <th></th>
+    <th></th>
+
+  </tr>
+  <%current_user.houses.each do |h| %>
+  <tr>
+    <td><%=h.address%></td>
+    <td><%="$#{h.price.to_i}/month"%></td>
+    <td style="text-align: -webkit-center"><%= button_to "Edit", edit_house_path(h.id), :class => "btn btn-primary btn-large", :method => :get %></td>
+  <td style="text-align: -webkit-center"><%= button_to "Delete", remove_path(h.id), :class => "btn btn-primary btn-large", method: :delete %></td>
+
+  </tr>
+  <%end %>
+</table>
+<%= button_to "New Listing", new_house_path, :class => "btn btn-primary btn-large", :method => :get %>
+
+<!-- <%= link_to "New Property", new_house_path %> -->
+</div>

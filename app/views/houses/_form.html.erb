@@ -1,0 +1,47 @@
+<%= form_for @house, :html => {class: 'new_house form-horizontal'} do |f| %>
+    <div class="row"><legend class="col-md-4 col-md-offset-4">New House:</legend></div>
+    <fieldset>
+        <div class="form-group">
+            <%= f.label :name, 'Description*', class: 'col-md-4 control-label' %>
+            <div class="col-md-5">
+                <%= f.text_field :name, class: 'form-control' %>
+            </div>
+        </div>
+        <div class="form-group">
+            <%= f.label :address, 'Address*', class: 'col-md-4 control-label' %>
+            <div class="col-md-5">
+                <%= f.text_field :address, class: 'form-control' %>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <%=f.label :price, 'Price*', class: 'col-md-4 control-label' %>
+            <div class="col-md-5">
+                "$"
+                <%= f.text_field :price, class: 'form-control' %>
+                "/month"
+            </div>
+        </div>
+
+        <div class="form-group">
+            <%= f.label :details, 'Details*', class: 'col-md-4 control-label' %>
+            <div class="col-md-5">
+                <%= f.text_area :details, class: 'form-control', :cols => 5, :rows => 5 %>
+            </div>
+        </div>
+
+
+        <div class="form-group">
+            <%= f.label :picture, 'Picture*', class: 'col-md-4 control-label' %>
+            <div class="col-md-5">
+                <%= f.file_field :picture, class: 'form-control' %>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-8 col-md-offset-4">
+                <%= f.submit 'Create House', class: 'btn btn-success' %>
+            </div>
+        </div>
+    </fieldset>
+<% end %>
