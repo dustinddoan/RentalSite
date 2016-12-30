@@ -19,6 +19,7 @@
         <div class="panel-heading"><%=house.name%></div>
         <div class="panel-body" style="text-align:-webkit-center"><%=image_tag house.picture.url(:square)%></div>
         <div class="panel-footer" style="color: #337ab7; text-align:-webkit-center"><%= "$#{house.price.to_i}/month OR $#{house.price.to_i/30}/day"%></div>
+        <!-- <div class="panel-footer" style="color: #337ab7"><%= time_ago_in_words(house.created_at)%></div> -->
         <div class="panel-footer"><%= link_to "View details »", house_path(house.id) %></div>
       </div>
     </div>

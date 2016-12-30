@@ -30,9 +30,9 @@ module Rental
       s3_region: 'us-east-1',
       s3_credentials: {
         s3_host_name: 's3.amazonaws.com',
-        bucket: 'bucketrental',
-        access_key_id: 'AKIAIU265DUHSWFCAKGQ',
-        secret_access_key: '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',
+        bucket: ENV['BUCKET'],
+        access_key_id: ENV['ACCESS_KEY_ID'],
+        secret_access_key: ENV['SECRET_ACCESS_KEY'],
       }
     }
 

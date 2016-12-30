@@ -31,6 +31,7 @@ class HousesController < ApplicationController
     @house.user = current_user
 
     if @house.save
+      flash[:success] = "Your listing was created successfully!"
       redirect_to user_path current_user
     else
       render :new

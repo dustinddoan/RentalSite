@@ -36,7 +36,7 @@ gem 'paperclip'
 gem 'rmagick'
 gem 'rails_12factor', group: :production
 
-
+gem 'dotenv-rails', :require => 'dotenv/rails-now', group: :development
 # Use Unicorn as the app server
 # gem 'unicorn'
 
