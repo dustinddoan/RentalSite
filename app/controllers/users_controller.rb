@@ -18,7 +18,6 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     if @user.save
       current_user = @user
-      flash[:success] = "Welcome to RentalSite! Your account was created successfully!"
       redirect_to root_path
     else
       render :new
