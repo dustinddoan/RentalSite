@@ -46,7 +46,7 @@ Rails.application.configure do
     s3_region: 'us-east-1',
     s3_credentials: {
       s3_host_name: 's3.amazonaws.com',
-      bucket: ENV['BUCKET'],
+      bucket: 'bucketrental',
       access_key_id: ENV['ACCESS_KEY_ID'],
       secret_access_key: ENV['SECRET_ACCESS_KEY'],
     }
