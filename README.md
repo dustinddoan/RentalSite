@@ -1,11 +1,21 @@
 # Rental Site
 
 RentalSite is a web-application built on Ruby on Rails. This is a rental site where users can sign up and post their listings or sign in and book a rent
+
 ### User Story
 - As a user, I am able to browsing the content and view details of any listing
 - As a user, I must sign up in order to post new listing and book a rent
 - A a user, I am able to send message to host without signing in
 - A a user, I am able to manage my inventory such as list new property, edit the current listing and delete listing
+
+### Screen Shots
+
+![alt tag](https://cloud.githubusercontent.com/assets/20649675/21619870/85b4feca-d1a6-11e6-9f77-916e1e1300e5.png)
+![alt tag](https://cloud.githubusercontent.com/assets/20649675/21619876/89b446c0-d1a6-11e6-9422-b4c3dd9f2c95.png)
+![alt tag](https://cloud.githubusercontent.com/assets/20649675/21619887/90d4293e-d1a6-11e6-8cbf-4de6763949c6.png)
+
+
+
 ### Tech
 Rental Site uses a number of open source projects to work properly:
 
@@ -16,7 +26,7 @@ Rental Site uses a number of open source projects to work properly:
 * [geocoder](https://github.com/alexreisner/geocoder) gem and [googlemap] api for creating map based on address
 ### Using online via *Heroku*
 - Click the link below to use it online
-*https://boiling-stream-10074.herokuapp.com/*
+*https://boiling-chamber-65261.herokuapp.com/*
 ### Requirement for using locally
 - You must have Amazon Web Service account to upload file to S3
 - You must register with Google for key in order to using google map api
